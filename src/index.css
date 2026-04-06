@@ -1,1 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
+
 @import "tailwindcss";
+@plugin "tailwindcss-animate";
+
+@theme {
+  /* Exact SMIT brand colors extracted from screenshots */
+  --color-smit-blue: #0073B7;
+  --color-smit-blue-dark: #005A8E;
+  --color-smit-blue-light: #E8F4FD;
+  --color-smit-green: #5B9A42;
+  --color-smit-green-light: #EDF7E8;
+  --color-smit-navy: #1B3A5F;
+  --color-smit-dark: #0C2340;
+  --color-smit-red: #E31E24;
+  --color-smit-orange: #F59E0B;
+  --color-smit-teal: #0D9488;
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Poppins', sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: #F7F8FC;
+    color: #4B5563;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    color: #111827;
+    font-weight: 700;
+  }
+}
+
+@layer utilities {
+  /* Exact SMIT gradients from screenshots */
+  .smit-gradient-header {
+    background: linear-gradient(135deg, #0073B7 0%, #005A8E 50%, #0C2340 100%);
+  }
+
+  .smit-stats-gradient {
+    background: linear-gradient(90deg, #0073B7 0%, #0D9488 50%, #0073B7 100%);
+  }
+
+  .smit-footer-gradient {
+    background: linear-gradient(180deg, #0C2340 0%, #081B2E 100%);
+  }
+
+  .smit-cta-gradient {
+    background: linear-gradient(135deg, #1E40AF 0%, #2563EB 50%, #3B82F6 100%);
+  }
+
+  .smit-vision-gradient {
+    background: linear-gradient(135deg, #0C2340 0%, #1B3A5F 50%, #0C2340 100%);
+  }
+
+  .btn-smit {
+    @apply bg-smit-blue text-white font-semibold rounded-lg shadow-md hover:bg-smit-blue-dark transition-all duration-200 cursor-pointer;
+  }
+
+  .btn-smit-outline {
+    @apply bg-white text-gray-700 border-2 border-gray-300 font-semibold rounded-lg hover:border-smit-blue hover:text-smit-blue transition-all duration-200 cursor-pointer;
+  }
+
+  .btn-smit-green {
+    @apply bg-smit-green text-white font-bold rounded-lg hover:opacity-90 transition-all cursor-pointer;
+  }
+
+  .input-field {
+    @apply w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-800 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-smit-blue/20 focus:border-smit-blue transition-all bg-white;
+  }
+
+  .card {
+    @apply bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-300;
+  }
+
+  .section-label {
+    @apply inline-block bg-smit-blue text-white text-xs font-bold uppercase tracking-widest px-5 py-2 rounded-full;
+  }
+}
