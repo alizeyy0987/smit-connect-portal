@@ -4,9 +4,9 @@ import toast from 'react-hot-toast';
 
 export default function LeaveManagementAdmin() {
   const [leaves, setLeaves] = useState([
-    { id: 1, studentId: 'WM-1001', name: 'Ali Khan', dateRange: '10-Oct-2025 to 12-Oct-2025', reason: 'Sick leave due to high fever and doctor advised bed rest.', status: 'Pending', image_url: null },
-    { id: 2, studentId: 'WM-1005', name: 'Zainab Fatima', dateRange: '15-Oct-2025 to 15-Oct-2025', reason: 'Family emergency - need to travel urgently.', status: 'Approved', image_url: 'https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-    { id: 3, studentId: 'WM-1003', name: 'Hamza Sheikh', dateRange: '20-Oct-2025 to 22-Oct-2025', reason: 'University exams overlap with class schedule.', status: 'Rejected', image_url: null },
+    { id: 1, studentId: 'WAM-393100', name: 'Wania', dateRange: '8-jan-2025 to 12-jan-2025', reason: 'Sick leave due to high fever and doctor advised bed rest.', status: 'Pending', image_url: null },
+    { id: 2, studentId: 'WAM-393108', name: 'Armish', dateRange: '5-feb-2025 to 19-feb-2025', reason: ' travel urgently.', status: 'Approved', },
+    { id: 3, studentId: 'WAM-393107', name: 'lisha', dateRange: '20-march-2025 to 22-march-2025', reason: 'DAE exams overlap with class schedule.', status: 'Rejected', image_url: null },
   ]);
 
   const [selectedLeave, setSelectedLeave] = useState(null);
@@ -109,7 +109,7 @@ export default function LeaveManagementAdmin() {
               </button>
             </div>
 
-            {/* Body */}
+            {}
             <div className="p-6 space-y-5">
               <div className="flex items-center justify-between">
                 <span className="text-xs font-bold text-gray-400 uppercase tracking-wider">Status</span>

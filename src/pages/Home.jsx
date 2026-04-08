@@ -61,10 +61,10 @@ export default function Home() {
             {/* Visual Social Proof / Thumbnails */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 max-w-5xl mx-auto px-4 lg:px-0">
               {[
-                'https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-                'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-                'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-                'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'
+                'https://media.istockphoto.com/id/2198078409/photo/woman-lawyer-and-tablet-at-meeting-with-team-planning-and-discussion-for-review-for-legal.webp?a=1&b=1&s=612x612&w=0&k=20&c=HhYck7YbMsoEC1daNwV_RW26u-ISRsZ6KWS3HWpar20=',
+                'https://plus.unsplash.com/premium_photo-1663099990889-10a861e6aa96?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Z3JvdXAlMjBkaXNjdXNzaW9ufGVufDB8fDB8fHww',
+                'https://plus.unsplash.com/premium_photo-1661383827769-0bdc408574b0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aGFuZCUyMHR5cGluZyUyMG9uJTIwbGFwdG9wfGVufDB8fDB8fHww',
+                'https://plus.unsplash.com/premium_photo-1683134153517-32015af21911?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGV2ZWxvcGVyc3xlbnwwfHwwfHx8MA%3D%3D'
               ].map((src, i) => (
                 <div key={i} className="aspect-[4/3] rounded-3xl overflow-hidden shadow-xl border-4 border-white hover:scale-105 transition-all duration-500 cursor-pointer group relative">
                   <img src={src} alt="Student" className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all" />
@@ -160,7 +160,8 @@ export default function Home() {
                       Admission Open
                     </div>
                   )}
-                  <img src={course.image} alt={course.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <img src={`https://images.unsplash.com/photo-1733826544831-ad71d05c8423?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8U2tpbGwlMjBBY2NlbGVyYXRvciUyMEJvb3RjYW1wJTIwaXR8ZW58MHx8MHx8fDA%3D`} alt={course.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+    
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
                     <button className="bg-white text-smit-blue px-6 py-3 rounded-xl font-bold text-sm shadow-xl flex items-center gap-2">
                        <Play size={16} fill="currentColor" /> Preview Syllabus
@@ -215,14 +216,16 @@ export default function Home() {
                 </button>
               </div>
               <div className="aspect-square bg-gray-100 overflow-hidden relative">
-                <img src={`https://images.unsplash.com/photo-1540317580384-e5d43616b9aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80&sig=${id}`} alt="Post" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <img src={`https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29uZmVyZW5jZXxlbnwwfHwwfHx8MA%3D%3D=${id}`} alt="Post" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   <span className="text-white text-xs font-black tracking-widest border-2 border-white px-6 py-3 rounded-xl uppercase">Like & Share</span>
                 </div>
               </div>
               <div className="p-8 text-left">
                 <p className="text-gray-600 font-medium text-sm leading-relaxed mb-6 line-clamp-3">
-                  Alhamdulillah! SMIT has successfully completed the registration for the new Batch of Web & Mobile App Development. Congratulations to all selected candidates!
+                 Alhamdulillah! SMIT has successfully completed the registration process for the new batch of Web & Mobile App Development. We warmly congratulate all the selected candidates who have earned their place through dedication and enthusiasm. This marks the beginning of an exciting journey where you will gain in-demand skills, hands-on experience, and the confidence to step into the professional world of technology.
+
+May this opportunity open doors to growth, innovation, and a successful career ahead. We wish every student the very best as they start learning, building, and shaping a brighter future for themselves and for Pakistan.
                 </p>
                 <div className="flex items-center gap-6 text-xs font-black text-gray-300">
                   <span className="flex items-center gap-1.5"><Sparkles size={14} className="text-smit-blue" /> 2.4K Likes</span>

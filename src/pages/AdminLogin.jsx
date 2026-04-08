@@ -22,7 +22,7 @@ export default function AdminLogin() {
 
     setTimeout(() => {
       setIsLoading(false);
-      if (formData.username === 'admin' && formData.password === 'admin') {
+      if ((formData.username === 'admin'||formData.username ==='admin@smit.edu.pk')&& formData.password === '123456') {
         dispatch(setUser({ user: { id: 1, role: 'ADMIN', name: 'Super Admin' }, session: 'admin-session' }));
         toast.success('Admin authenticated successfully!');
         navigate('/admin/dashboard');

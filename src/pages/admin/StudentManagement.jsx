@@ -16,9 +16,10 @@ export default function StudentManagement() {
         else throw new Error();
       } catch {
         setStudents([
-          { cnic: '42101-1234567-1', rollNumber: 'WM-1001', name: 'Ali Khan', status: 'Registered' },
-          { cnic: '42101-7654321-2', rollNumber: 'WM-1002', name: 'Sara Ahmed', status: 'Pending' },
-          { cnic: '42101-9876543-3', rollNumber: 'WM-1003', name: 'Hamza Sheikh', status: 'Registered' },
+          { cnic: '12345-1234567-6', rollNumber: 'WAM-393103', name: 'Aqsa Khan', status: 'Registered' },
+          { cnic: '12345-1234565-8', rollNumber: 'WAM-393102', name: 'Maham', status: 'Pending' },
+          { cnic: '12345-1234575-9', rollNumber: 'WAM-393101', name: 'Aliza', status: 'Registered' },
+          { cnic: '42155-9876563-3', rollNumber: 'WAM-393100', name: 'Wania', status: 'Registered' },
         ]);
       }
     };
